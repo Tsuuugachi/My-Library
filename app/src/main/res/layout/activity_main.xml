@@ -7,17 +7,17 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/followernumber"
+        android:id="@+id/follower_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="55"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintHorizontal_bias="0.713"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.489" />
 
     <TextView
         android:id="@+id/follower"
@@ -25,15 +25,15 @@
         android:layout_height="wrap_content"
         android:text="フォロワー数"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/followernumber"
+        app:layout_constraintBottom_toTopOf="@+id/follower_number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toEndOf="@+id/follow"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
+        app:layout_constraintVertical_bias="0.965" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="user_name"
@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/user_image"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -50,28 +50,28 @@
         android:layout_height="wrap_content"
         android:text="フォロー数"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/follownumber"
+        app:layout_constraintBottom_toTopOf="@+id/follow_number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.915" />
+        app:layout_constraintVertical_bias="0.965" />
 
     <TextView
-        android:id="@+id/follownumber"
+        android:id="@+id/follow_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="65"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintHorizontal_bias="0.249"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        app:layout_constraintVertical_bias="0.489" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/user_image"
         android:layout_width="124dp"
         android:layout_height="138dp"
         android:src="@drawable/user"
@@ -83,16 +83,17 @@
         app:layout_constraintVertical_bias="0.031" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/follow_button"
         android:layout_width="65dp"
         android:layout_height="35dp"
         android:background="@drawable/shape_rounded_corners"
         android:text="フォロー"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/user_name"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        app:layout_constraintVertical_bias="0.313" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
