@@ -267,6 +267,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_rounded_corners"
         android:text="フォロー"
+        android:textColor="@color/color_selector"
         app:layout_constraintStart_toEndOf="@+id/user_name1"
         app:layout_constraintTop_toTopOf="@+id/user_name1" />
 
@@ -278,6 +279,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_rounded_corners"
         android:text="フォロー"
+        android:textColor="@color/color_selector"
         app:layout_constraintStart_toEndOf="@+id/user_name2"
         app:layout_constraintTop_toTopOf="@+id/user_name2" />
 
@@ -289,6 +291,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_rounded_corners"
         android:text="フォロー"
+        android:textColor="@color/color_selector"
         app:layout_constraintStart_toEndOf="@+id/user_name3"
         app:layout_constraintTop_toTopOf="@+id/user_name3" />
 
@@ -300,6 +303,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_rounded_corners"
         android:text="フォロー"
+        android:textColor="@color/color_selector"
         app:layout_constraintStart_toEndOf="@+id/user_name4"
         app:layout_constraintTop_toTopOf="@+id/user_name4" />
 
@@ -311,6 +315,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_rounded_corners"
         android:text="フォロー"
+        android:textColor="@color/color_selector"
         app:layout_constraintStart_toEndOf="@+id/user_name5"
         app:layout_constraintTop_toTopOf="@+id/user_name5" />
 
@@ -322,6 +327,7 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/shape_rounded_corners"
         android:text="フォロー"
+        android:textColor="@color/color_selector"
         app:layout_constraintStart_toEndOf="@+id/user_name6"
         app:layout_constraintTop_toTopOf="@+id/user_name6" />
 
