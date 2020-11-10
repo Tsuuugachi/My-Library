@@ -11,7 +11,7 @@
         android:layout_width="53dp"
         android:layout_height="54dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/user" />
@@ -71,11 +71,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
         android:text="user_name"
         android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/user_image1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/user_image1" />
 
     <TextView
         android:id="@+id/user_name2"
@@ -330,5 +329,27 @@
         android:textColor="@color/color_selector"
         app:layout_constraintStart_toEndOf="@+id/user_name6"
         app:layout_constraintTop_toTopOf="@+id/user_name6" />
+
+    <ImageButton
+        android:id="@+id/return_button"
+        android:layout_width="39dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="35dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
