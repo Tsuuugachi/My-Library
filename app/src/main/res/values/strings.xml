@@ -2,6 +2,6 @@
     <string name="app_name">My- Library</string>
     <string name="login">ログイン</string>
     <string name="new_account">新規登録</string>
-    <string name="mail">Mail</string>
+    <string name="mail">Mail Address</string>
     <string name="password">Password</string>
 </resources>
