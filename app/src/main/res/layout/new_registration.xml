@@ -15,7 +15,7 @@
         android:ems="10"
         android:hint="@string/mail"
         android:inputType="textEmailAddress"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/Mail_Address_View"
         app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
 
     <EditText
@@ -28,11 +28,11 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.792"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/Password_View"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Account_Registration_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/eTmail" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
@@ -51,10 +51,10 @@
         android:background="@drawable/new_accountt_background"
         android:text="ログイン画面へ"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/Account_Registration_button" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/New_Registration_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
@@ -77,11 +77,11 @@
         android:text="User Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/User_Name_View"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/User_Name_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="164dp"
@@ -90,20 +90,20 @@
         tools:layout_editor_absoluteX="46dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Password_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="パスワード"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/User_Name_View"
         tools:layout_editor_absoluteX="56dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Mail_Address_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
         android:text="メールアドレス"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/Password_View"
         tools:layout_editor_absoluteX="41dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
