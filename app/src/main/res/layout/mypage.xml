@@ -31,7 +31,7 @@
         android:layout_width="108dp"
         android:layout_height="63dp"
         android:layout_marginTop="304dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="64dp"
         android:text="リードリスト"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -79,40 +79,40 @@
 
     <TextView
         android:id="@+id/Follow_View"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:text="フォロー"
+        android:layout_width="68dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name_View" />
+        app:layout_constraintTop_toBottomOf="@+id/Follow_button" />
 
     <TextView
         android:id="@+id/Follower_View"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:text="フォロワー"
+        android:layout_width="61dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="84dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Name_View" />
+        app:layout_constraintTop_toBottomOf="@+id/Follower_button" />
 
     <Button
         android:id="@+id/Follow_button"
-        android:layout_width="79dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="208dp"
         android:text="フォロー数"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Follow_View" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Follower_button"
-        android:layout_width="84dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="92dp"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="56dp"
         android:text="フォロワー数"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Follower_View" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
