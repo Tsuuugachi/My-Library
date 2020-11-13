@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/Return_Button"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageButton
+        android:id="@+id/Check_Button"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="フォローリスト"
+        app:layout_constraintEnd_toStartOf="@+id/Check_Button"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/Return_Button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/User_Name_View1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:text="ユーザーネーム"
+        app:layout_constraintStart_toEndOf="@+id/User_Button1"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/Follow_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="解除しました"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Follow_button3" />
+
+    <Button
+        android:id="@+id/Follow_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="解除しました"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Follow_button1" />
+
+    <TextView
+        android:id="@+id/User_Name_View4"
+        android:layout_width="99dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="56dp"
+        android:text="ユーザーネーム"
+        app:layout_constraintStart_toEndOf="@+id/User_Button4"
+        app:layout_constraintTop_toBottomOf="@+id/Last_Login_View3" />
+
+    <Button
+        android:id="@+id/Follow_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:text="フォロー中"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Follow_button2" />
+
+    <ImageButton
+        android:id="@+id/User_Button3"
+        android:layout_width="80dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User_Button2" />
+
+    <TextView
+        android:id="@+id/Last_Login_View1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="最終ログイン日付"
+        app:layout_constraintStart_toEndOf="@+id/User_Button1"
+        app:layout_constraintTop_toBottomOf="@+id/User_Name_View1" />
+
+    <ImageButton
+        android:id="@+id/User_Button1"
+        android:layout_width="80dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/User_Button2"
+        android:layout_width="80dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User_Button1" />
+
+    <ImageButton
+        android:id="@+id/User_Button4"
+        android:layout_width="80dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User_Button3" />
+
+    <TextView
+        android:id="@+id/Last_Login_View4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="最終ログイン日付"
+        app:layout_constraintStart_toEndOf="@+id/User_Button4"
+        app:layout_constraintTop_toBottomOf="@+id/User_Name_View4" />
+
+    <TextView
+        android:id="@+id/Last_Login_View3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="最終ログイン日付"
+        app:layout_constraintStart_toEndOf="@+id/User_Button3"
+        app:layout_constraintTop_toBottomOf="@+id/User_Name_View3" />
+
+    <TextView
+        android:id="@+id/Last_Login_View2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="最終ログイン日付"
+        app:layout_constraintStart_toEndOf="@+id/User_Button2"
+        app:layout_constraintTop_toBottomOf="@+id/User_Name_View2" />
+
+    <TextView
+        android:id="@+id/User_Name_View2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:text="ユーザーネーム"
+        app:layout_constraintStart_toEndOf="@+id/User_Button2"
+        app:layout_constraintTop_toBottomOf="@+id/Last_Login_View1" />
+
+    <TextView
+        android:id="@+id/User_Name_View3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:text="ユーザーネーム"
+        app:layout_constraintStart_toEndOf="@+id/User_Button3"
+        app:layout_constraintTop_toBottomOf="@+id/Last_Login_View2" />
+
+    <Button
+        android:id="@+id/Follow_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="16dp"
+        android:text="フォロー中"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line_horizontal_center"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#030404"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
