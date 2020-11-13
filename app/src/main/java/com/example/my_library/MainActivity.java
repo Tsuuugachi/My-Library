@@ -15,7 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.new_registration);
         setContentView(R.layout.login);
         setContentView(R.layout.user_followlist);
-        setContentView(R.layout.user_follow);
+        setContentView(R.layout.user_follower);
+        setContentView(R.layout.read_list_ranking);
+
+
     }
 
 }
