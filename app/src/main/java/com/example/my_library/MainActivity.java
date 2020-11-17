@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.user_follow);
         setContentView(R.layout.user_read_listdetails);
         setContentView(R.layout.new_registration_verification);
+        setContentView(R.layout.favorite_book);
         setContentView(R.layout.search_result);
     }
 
