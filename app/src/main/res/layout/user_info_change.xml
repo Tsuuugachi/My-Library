@@ -23,7 +23,6 @@
         android:textSize="8sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/Icon_imageView"
         android:layout_width="108dp"
@@ -33,7 +32,6 @@
         android:background="@drawable/user"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/Name_textView"
         android:layout_width="wrap_content"
@@ -43,7 +41,6 @@
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Icon_imageView" />
-
     <View
         android:id="@+id/view"
         android:layout_width="fill_parent"
@@ -53,7 +50,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name_textView" />
-
     <EditText
         android:id="@+id/Current_Password"
         android:layout_width="318dp"
@@ -65,7 +61,6 @@
         android:inputType="numberPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
-
     <EditText
         android:id="@+id/New_Password"
         android:layout_width="228dp"
@@ -78,7 +73,6 @@
         android:maxLength="128"
         app:layout_constraintEnd_toStartOf="@+id/Change_button1"
         app:layout_constraintTop_toBottomOf="@+id/Current_Password" />
-
     <Button
         android:id="@+id/Change_button1"
         android:layout_width="wrap_content"
@@ -87,7 +81,6 @@
         android:text="変更"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Current_Password" />
-
     <Button
         android:id="@+id/Change_button2"
         android:layout_width="wrap_content"
@@ -96,7 +89,6 @@
         android:text="変更"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Change_button1" />
-
     <EditText
         android:id="@+id/New_EmailAddress"
         android:layout_width="230dp"
@@ -109,7 +101,6 @@
         android:maxLength="30"
         app:layout_constraintEnd_toStartOf="@+id/Change_button2"
         app:layout_constraintTop_toBottomOf="@+id/New_Password" />
-
     <Button
         android:id="@+id/Current_button"
         android:layout_width="171dp"
