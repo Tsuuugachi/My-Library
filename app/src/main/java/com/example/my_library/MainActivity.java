@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.new_registration);
         setContentView(R.layout.login);
         setContentView(R.layout.user_followlist);
-        setContentView(R.layout.user_follow);
+        setContentView(R.layout.user_followlist);
         setContentView(R.layout.user_read_listdetails);
-        setContentView(R.layout.new_Registration_Verification);
+        setContentView(R.layout.new_registration_verification);
     }
 
 }
