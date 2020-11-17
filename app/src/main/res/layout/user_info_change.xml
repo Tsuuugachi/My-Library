@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ImageButton
         android:id="@+id/Twitter_imageButton"
         android:layout_width="33dp"
@@ -14,7 +13,6 @@
         android:background="@drawable/twitter"
         app:layout_constraintEnd_toStartOf="@+id/Cooperation_button"
         app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/Cooperation_button"
         android:layout_width="90dp"
