@@ -5,4 +5,5 @@
     <string name="mail">Mail Address</string>
     <string name="password">Password</string>
     <string name="list_comment">リードリストコメント</string>
+    <string name="option">リードリスト名で検索</string>
 </resources>
