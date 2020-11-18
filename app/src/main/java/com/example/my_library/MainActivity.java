@@ -3,11 +3,16 @@ package com.example.my_library;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.widget.ListView;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.user);
         setContentView(R.layout.mypage);
         setContentView(R.layout.new_registration);
         setContentView(R.layout.login);
@@ -17,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.user_read_listdetails);
         setContentView(R.layout.new_registration_verification);
         setContentView(R.layout.details);
+        setContentView(R.layout.favorite_book);
+        setContentView(R.layout.search_result);
+        setContentView(R.layout.myread_list);
+        setContentView(R.layout.user_info_change);
+        setContentView(R.layout.withdrawal_verification);
     }
+
+    //SearchView追加
 
 }
