@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">TestTableLayout</string>
     <string name="button31">(3,1)</string>
     <string name="button32">(3,2)</string>
     <string name="button33">(3,3)</string>
