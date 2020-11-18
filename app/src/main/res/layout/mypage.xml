@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Crack_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:text="変更"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Bookshelf_button"
+        android:layout_width="94dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="304dp"
+        android:text="本棚"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/RerdList_button"
+        android:layout_width="108dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="64dp"
+        android:text="リードリスト"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Good_button"
+        android:layout_width="104dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="高評価したコメント"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bookshelf_button" />
+
+    <TextView
+        android:id="@+id/Name_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ユーザーネーム"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_View" />
+
+    <Button
+        android:id="@+id/Favorite_button"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="お気に入り"
+        app:layout_constraintStart_toEndOf="@+id/Good_button"
+        app:layout_constraintTop_toBottomOf="@+id/RerdList_button" />
+
+    <ImageView
+        android:id="@+id/icon_View"
+        android:layout_width="118dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/Follow_View"
+        android:layout_width="68dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Follow_button" />
+
+    <TextView
+        android:id="@+id/Follower_View"
+        android:layout_width="61dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Follower_button" />
+
+    <Button
+        android:id="@+id/Follow_button"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="208dp"
+        android:text="フォロー数"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Follower_button"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="56dp"
+        android:text="フォロワー数"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
