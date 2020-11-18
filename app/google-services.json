@@ -5,6 +5,7 @@
     "project_id": "my-library-a3b67",
     "storage_bucket": "my-library-a3b67.appspot.com"
   },
+  "client": [],
   "client": [
     {
       "client_info": {
