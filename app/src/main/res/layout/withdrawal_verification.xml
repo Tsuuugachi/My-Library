@@ -44,4 +44,5 @@
         android:text="退会"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="@+id/button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
