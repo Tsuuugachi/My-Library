@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.favorite_book);
         setContentView(R.layout.search_result);
         setContentView(R.layout.user_info_change);
+        setContentView(R.layout.withdrawal_verification);
     }
 
     //SearchView追加
