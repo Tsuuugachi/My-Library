@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>閲覧順</item>
+        <item>登録数</item>
+    </string-array>
+    <string-array name="planets_option">
+        <item>編集</item>
+        <item>削除</item>
+        <item>シェア</item>
+    </string-array>
+</resources>
