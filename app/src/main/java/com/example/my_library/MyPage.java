@@ -1,9 +1,12 @@
 package com.example.my_library;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -23,20 +27,25 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+import java.net.URL;
 import java.util.Map;
 import java.util.Objects;
 
 public class MyPage extends AppCompatActivity {
+
 
     private static final String TAG = "MyPage";
 
     private static final String name = "user_name";
     private static final String image = "user_image";
 
-    private TextView textViewDate;
+    private TextView nameDate;
     private TextView follo;
     private TextView followers;
+    private ImageView imageDate;
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private DocumentReference noteRrf = db.collection("user").document("1801168@s.asojuku.ac.jp");
@@ -46,9 +55,9 @@ public class MyPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mypage);
 
-        textViewDate = findViewById(R.id.text_view_date);
-        follo = findViewById(R.id.follo);
-        followers = findViewById(R.id.followers);
+        nameDate = findViewById(R.id.Name_View);
+        follo = findViewById(R.id.Follow_View);
+        followers = findViewById(R.id.Follower_View);
 
         noteRrf.get()
                 .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -56,11 +65,23 @@ public class MyPage extends AppCompatActivity {
                     public void onSuccess(DocumentSnapshot documentSnapshot) {
                         if (documentSnapshot.exists()){
                             String user_name = documentSnapshot.getString(name);
-                            String user_image = documentSnapshot.getString(image);
 
                             //Map<String, Object> note = documentSnapshot.getData();
 
-                            textViewDate.setText("name:" + user_name + "\n" + "img" + user_image);
+                            nameDate.setText(user_name);
+
+                            // Reference to an image file in Cloud Storage
+                            StorageReference storageReference = FirebaseStorage.getInstance().getReference();
+
+                            // ImageView in your Activity
+                            ImageView imageView = findViewById(R.id.icon_View);
+
+                            // Download directly from StorageReference using Glide
+                            // (See MyAppGlideModule for Loader registration)
+                            Glide.with(this )
+                                    .load(storageReference)
+                                    .into(imageView);
+
                         } else {
                             Toast.makeText(MyPage.this, "Document does not exist", Toast.LENGTH_SHORT).show();
                         }
@@ -75,7 +96,7 @@ public class MyPage extends AppCompatActivity {
                 });
 
         Query capitalCities = db.collection("user").document("1801168@s.asojuku.ac.jp")
-                                .collection("").whereEqualTo("user_mail", true);
+                                .collection("follow").whereEqualTo("user_mail", true);
 
         capitalCities
                 .get()
