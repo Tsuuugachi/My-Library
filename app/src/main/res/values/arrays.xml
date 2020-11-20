@@ -13,5 +13,16 @@
         <item>登録順</item>
         <item>あ順昇順</item>
         <item>あ順降順</item>
+    <string-array name="planets_favorite">
+        <item>最新観覧昇順</item>
+        <item>最新観覧降順</item>
+        <item>登録昇順</item>
+        <item>登録降順</item>
+    <string-array name="planets_readrist">
+        <item>お気に入りに追加</item>
+        <item>リードリストに追加</item>
+        <item>作者</item>
+        <item>この本を含むリードリスト</item>
+        <item>シェア</item>
     </string-array>
 </resources>
