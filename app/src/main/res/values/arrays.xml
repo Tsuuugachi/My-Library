@@ -9,4 +9,9 @@
         <item>削除</item>
         <item>シェア</item>
     </string-array>
+    <string-array name="Order">
+        <item>登録順</item>
+        <item>あ順昇順</item>
+        <item>あ順降順</item>
+    </string-array>
 </resources>

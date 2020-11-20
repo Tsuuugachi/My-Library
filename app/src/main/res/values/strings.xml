@@ -1,13 +1,4 @@
 <resources>
-    <string name="button31">(3,1)</string>
-    <string name="button32">(3,2)</string>
-    <string name="button33">(3,3)</string>
-    <string name="app_name">My- Library</string>
-    <string name="login">ログイン</string>
-    <string name="new_account">新規登録</string>
-    <string name="mail">Mail Address</string>
-    <string name="password">Password</string>
-    <string name="app_name">TestTableLayout</string>
     <string name="button11">(1,1)</string>
     <string name="button12">(1,2)</string>
     <string name="button13">(1,3)</string>
@@ -17,6 +8,13 @@
     <string name="button31">(3,1)</string>
     <string name="button32">(3,2)</string>
     <string name="button33">(3,3)</string>
+    <string name="app_name">My- Library</string>
+    <string name="login">ログイン</string>
+    <string name="new_account">新規登録</string>
+    <string name="mail">Mail Address</string>
+    <string name="password">Password</string>
     <string name="list_comment">リードリストコメント</string>
     <string name="option">リードリスト名で検索</string>
+    <string name="Genre">ジャンル</string>
+
 </resources>
