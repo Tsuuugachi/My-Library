@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="favorite_array">
+        <item>追加順</item>
+        <item>名前順(昇順)</item>
+        <item>名前順(降順)</item>
+        <item>出版日</item>
+    </string-array>
+</resources>

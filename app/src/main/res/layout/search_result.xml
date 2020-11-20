@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="並び替え："
+        app:layout_constraintEnd_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/spinner" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="113dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/search_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="検索結果"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/book_image1"
+        android:layout_width="117dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/book_image2"
+        android:layout_width="117dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/book_image1"
+        app:layout_constraintTop_toBottomOf="@+id/book_image1"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/book_image3"
+        android:layout_width="117dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/book_image2"
+        app:layout_constraintTop_toBottomOf="@+id/book_image2"
+        app:srcCompat="@drawable/book" />
+
+    <TextView
+        android:id="@+id/book_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:text="book_name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/book_image1"
+        app:layout_constraintTop_toTopOf="@+id/book_image1" />
+
+    <TextView
+        android:id="@+id/book_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="book_name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/book_image2"
+        app:layout_constraintTop_toTopOf="@+id/book_image2" />
+
+    <TextView
+        android:id="@+id/book_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="book_name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/book_image3"
+        app:layout_constraintTop_toTopOf="@+id/book_image3" />
+
+    <ImageButton
+        android:id="@+id/back_Butoon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@+id/page_Button1"
+        app:layout_constraintTop_toTopOf="@+id/page_Button1" />
+
+    <Button
+        android:id="@+id/page_Button1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_image3" />
+
+    <Button
+        android:id="@+id/page_Button2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/page_Button1"
+        app:layout_constraintTop_toTopOf="@+id/page_Button1" />
+
+    <Button
+        android:id="@+id/page_Button3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/page_Button2"
+        app:layout_constraintTop_toTopOf="@+id/page_Button2" />
+
+    <ImageButton
+        android:id="@+id/move_Button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/move"
+        app:layout_constraintStart_toEndOf="@+id/page_Button3"
+        app:layout_constraintTop_toTopOf="@+id/page_Button3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
