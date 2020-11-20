@@ -3,10 +3,14 @@ package com.example.my_library;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.widget.ListView;
-import java.util.ArrayList;
+
+import android.view.Menu;
+import android.view.MenuInflater;
+
+import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.Menu;
+import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -35,6 +39,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.myread_list_details);
     }
 
-    //SearchView追加
+    //ヘッダー　メニュー表示
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menubar, menu);
+
+        return true;
+    }
+
+
+
 
 }

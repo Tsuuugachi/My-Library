@@ -9,6 +9,10 @@
         <item>削除</item>
         <item>シェア</item>
     </string-array>
+    <string-array name="Order">
+        <item>登録順</item>
+        <item>あ順昇順</item>
+        <item>あ順降順</item>
     <string-array name="planets_favorite">
         <item>最新観覧昇順</item>
         <item>最新観覧降順</item>
