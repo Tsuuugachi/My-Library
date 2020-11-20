@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="544dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/Coment_imageButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
@@ -71,7 +71,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/GarbageimageButton"
         android:layout_width="31dp"
         android:layout_height="27dp"
         android:layout_marginStart="12dp"
@@ -91,7 +91,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/Explanation_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
@@ -103,7 +103,7 @@
         android:id="@+id/sort_spinner"
         android:layout_width="54dp"
         android:layout_height="46dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginTop="348dp"
         android:layout_marginEnd="32dp"
         android:entries="@array/planets_readrist"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,7 +117,7 @@
         android:layout_marginTop="24dp"
         android:text="公開"
         app:layout_constraintStart_toEndOf="@+id/Bad_textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/Explanation_textView" />
 
     <ImageButton
         android:id="@+id/Good_imageButton"
@@ -160,7 +160,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/Recording_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -194,10 +194,10 @@
         android:layout_marginTop="12dp"
         android:background="@drawable/book"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/Recording_textView" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/Coment_textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -207,17 +207,17 @@
         app:layout_constraintTop_toBottomOf="@+id/Book_imageButton2" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/User_imageButton"
         android:layout_width="43dp"
         android:layout_height="42dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/user"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/Coment_textView2" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/Coment_imageButton"
         android:layout_width="23dp"
         android:layout_height="20dp"
         android:layout_marginStart="12dp"
@@ -254,7 +254,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/PageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
@@ -269,8 +269,8 @@
         android:layout_height="10dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintStart_toEndOf="@+id/User_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Coment_textView2" />
 
     <TextView
         android:id="@+id/Coment_textView"
@@ -278,7 +278,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/User_imageButton"
         app:layout_constraintTop_toBottomOf="@+id/Date_textView" />
 
     <TextView
