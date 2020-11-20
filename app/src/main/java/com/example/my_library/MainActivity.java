@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.myread_list);
         setContentView(R.layout.user_info_change);
         setContentView(R.layout.withdrawal_verification);
+        setContentView(R.layout.favorite_myread_list);
         setContentView(R.layout.myread_list_details);
     }
 

@@ -9,6 +9,11 @@
         <item>削除</item>
         <item>シェア</item>
     </string-array>
+    <string-array name="planets_favorite">
+        <item>最新観覧昇順</item>
+        <item>最新観覧降順</item>
+        <item>登録昇順</item>
+        <item>登録降順</item>
     <string-array name="planets_readrist">
         <item>お気に入りに追加</item>
         <item>リードリストに追加</item>
