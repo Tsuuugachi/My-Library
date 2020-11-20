@@ -9,4 +9,11 @@
         <item>削除</item>
         <item>シェア</item>
     </string-array>
+    <string-array name="planets_readrist">
+        <item>お気に入りに追加</item>
+        <item>リードリストに追加</item>
+        <item>作者</item>
+        <item>この本を含むリードリスト</item>
+        <item>シェア</item>
+    </string-array>
 </resources>
