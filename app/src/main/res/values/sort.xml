@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="planets_array">
-        <item>登録順</item>
-        <item>あ順昇順</item>
-        <item>あ順降順</item>
-    </string-array>
-</resources>
