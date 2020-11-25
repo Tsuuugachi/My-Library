@@ -172,6 +172,7 @@
                 android:textSize="10sp"
                 app:layout_constraintStart_toEndOf="@+id/last_login"
                 app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
         </TableRow>
 
     </TableLayout>
