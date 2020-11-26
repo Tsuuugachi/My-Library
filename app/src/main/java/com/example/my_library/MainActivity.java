@@ -11,6 +11,9 @@ import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.Menu;
 import android.view.ViewGroup;
+import android.view.View;
+import android.widget.EditText;
+import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -19,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.user);
         setContentView(R.layout.mypage);
         setContentView(R.layout.new_registration);
-        setContentView(R.layout.login);
         setContentView(R.layout.user_followlist);
         setContentView(R.layout.user_follower);
         setContentView(R.layout.bookshelf);
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.withdrawal_verification);
         setContentView(R.layout.favorite_myread_list);
         setContentView(R.layout.myread_list_details);
+        setContentView(R.layout.login);
     }
 
     //ヘッダー　メニュー表示
