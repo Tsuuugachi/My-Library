@@ -9,6 +9,9 @@ import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.Menu;
 import android.view.ViewGroup;
+import android.view.View;
+import android.widget.EditText;
+import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     @Override
