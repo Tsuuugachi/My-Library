@@ -53,6 +53,16 @@
         app:layout_constraintTop_toBottomOf="@+id/ReadList"
         app:srcCompat="@drawable/book" />
 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Book_Image1" />
+
     <ImageView
         android:id="@+id/Book_Image2"
         android:layout_width="50dp"
@@ -71,6 +81,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Comment_Form"
         app:srcCompat="@drawable/user" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User_Image1" />
 
     <ImageView
         android:id="@+id/User_Image2"
@@ -94,7 +116,7 @@
         android:id="@+id/Good_Button1"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/good"
         app:layout_constraintStart_toEndOf="@+id/list_image2"
@@ -149,29 +171,31 @@
         android:id="@+id/sort_Spinner1"
         android:layout_width="22dp"
         android:layout_height="21dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/hamburger"
         android:entries="@array/planets_readrist"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/book_Text1" />
+        app:layout_constraintTop_toTopOf="@+id/Book_Image1" />
 
     <Spinner
         android:id="@+id/sort_Spinner2"
         android:layout_width="22dp"
         android:layout_height="21dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/hamburger"
         android:entries="@array/planets_readrist"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/book_Text2" />
+        app:layout_constraintTop_toBottomOf="@+id/Book_Image1" />
 
     <Button
         android:id="@+id/Send_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/button_customize"
         android:text="投稿"
         app:layout_constraintStart_toEndOf="@+id/Comment_Form"
         app:layout_constraintTop_toTopOf="@+id/Comment_Form" />
@@ -265,7 +289,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="コメント"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -422,6 +446,27 @@
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/book_Name2"
         app:layout_constraintTop_toTopOf="@+id/book_Name2" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="180dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReadList" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="272dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Comment" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
