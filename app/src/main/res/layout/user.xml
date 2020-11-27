@@ -10,23 +10,12 @@
         android:id="@+id/followernumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="8dp"
         android:text="0"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/follownumber"
-        app:layout_constraintTop_toBottomOf="@+id/follower" />
-
-    <TextView
-        android:id="@+id/follower"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:text="フォロワー数"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/follow"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <TextView
         android:id="@+id/name"
@@ -40,28 +29,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/follow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="20dp"
-        android:text="フォロー数"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    <TextView
         android:id="@+id/follownumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
         android:text="0"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/follow" />
-
-    /
 
     <Button
         android:id="@+id/list_Button1"
@@ -210,5 +186,26 @@
         android:background="@drawable/move"
         app:layout_constraintStart_toEndOf="@+id/page_Button3"
         app:layout_constraintTop_toTopOf="@+id/page_Button3" />
+
+    <Button
+        android:id="@+id/follow"
+        android:layout_width="86dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/clear"
+        android:text="フォロー数"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="86dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/clear"
+        android:text="フォロワー数"
+        app:layout_constraintStart_toEndOf="@+id/follow"
+        app:layout_constraintTop_toTopOf="@+id/follow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
