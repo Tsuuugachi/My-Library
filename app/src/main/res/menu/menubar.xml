@@ -56,6 +56,7 @@
     <item
         android:id="@+id/user_Button"
         android:title="ユーザー詳細" />
+    <item android:title="ユーザー情報変更" />
     <item
         android:id="@+id/logout_Button"
         android:title="ログアウト" />
