@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.user_read_listdetails);
         setContentView(R.layout.new_registration_verification);
         setContentView(R.layout.barcode_reading);
-        setContentView(R.layout.user_read_listdetails);
         setContentView(R.layout.details);
         setContentView(R.layout.favorite_book);
         setContentView(R.layout.search_result);
@@ -37,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.withdrawal_verification);
         setContentView(R.layout.favorite_myread_list);
         setContentView(R.layout.myread_list_details);
+        setContentView(R.layout.user_read_listdetails);
     }
 
     //ヘッダー　メニュー表示

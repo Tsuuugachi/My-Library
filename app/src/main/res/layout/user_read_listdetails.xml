@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <SearchView
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/list_image1"
         android:layout_width="110dp"
@@ -35,6 +43,139 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/book" />
 
+    <ImageView
+        android:id="@+id/Book_Image1"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ReadList"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/Book_Image2"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Book_Image1"
+        app:srcCompat="@drawable/book" />
+
+    <ImageView
+        android:id="@+id/User_Image1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Comment_Form"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/User_Image2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/User_Image1"
+        app:layout_constraintTop_toBottomOf="@+id/User_Image1"
+        app:srcCompat="@drawable/user" />
+
+    <ImageButton
+        android:id="@+id/favorite"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/star"
+        app:layout_constraintStart_toEndOf="@+id/Bad_Button1"
+        app:layout_constraintTop_toTopOf="@+id/Bad_Button1" />
+
+    <ImageButton
+        android:id="@+id/Good_Button1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/good"
+        app:layout_constraintStart_toEndOf="@+id/list_image2"
+        app:layout_constraintTop_toBottomOf="@+id/Author1" />
+
+    <ImageButton
+        android:id="@+id/Good_Button2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/good"
+        app:layout_constraintStart_toEndOf="@+id/Created_Date1"
+        app:layout_constraintTop_toTopOf="@+id/Created_Date1" />
+
+    <ImageButton
+        android:id="@+id/good_Button3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/good"
+        app:layout_constraintStart_toEndOf="@+id/created_Date2"
+        app:layout_constraintTop_toTopOf="@+id/created_Date2" />
+
+    <ImageButton
+        android:id="@+id/Bad_Button1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bad"
+        app:layout_constraintStart_toEndOf="@+id/Good_Button1"
+        app:layout_constraintTop_toTopOf="@+id/Good_Button1" />
+
+    <ImageButton
+        android:id="@+id/Bad_Button2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/bad"
+        app:layout_constraintStart_toEndOf="@+id/Good_Button2"
+        app:layout_constraintTop_toTopOf="@+id/Good_Button2" />
+
+    <ImageButton
+        android:id="@+id/bad_Button3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/bad"
+        app:layout_constraintStart_toEndOf="@+id/good_Button3"
+        app:layout_constraintTop_toTopOf="@+id/good_Button3" />
+
+    <Spinner
+        android:id="@+id/sort_Spinner1"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/hamburger"
+        android:entries="@array/planets_readrist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/book_Text1" />
+
+    <Spinner
+        android:id="@+id/sort_Spinner2"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/hamburger"
+        android:entries="@array/planets_readrist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/book_Text2" />
+
+    <Button
+        android:id="@+id/Send_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="投稿"
+        app:layout_constraintStart_toEndOf="@+id/Comment_Form"
+        app:layout_constraintTop_toTopOf="@+id/Comment_Form" />
+
     <TextView
         android:id="@+id/list_name"
         android:layout_width="wrap_content"
@@ -57,22 +198,13 @@
         app:layout_constraintTop_toBottomOf="@+id/list_name" />
 
     <TextView
-        android:id="@+id/Author_name"
+        android:id="@+id/author_Name1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
         android:text="○○○○"
         app:layout_constraintStart_toEndOf="@+id/Author1"
         app:layout_constraintTop_toTopOf="@+id/Author1" />
-
-    <ImageButton
-        android:id="@+id/favorite"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/star"
-        app:layout_constraintStart_toEndOf="@+id/Bad_Button1"
-        app:layout_constraintTop_toTopOf="@+id/Bad_Button1" />
 
     <TextView
         android:id="@+id/ReadList"
@@ -85,23 +217,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/list_image1" />
 
-    <ImageView
-        android:id="@+id/Book_Image1"
-        android:layout_width="50dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ReadList"
-        app:srcCompat="@drawable/book" />
-
     <TextView
-        android:id="@+id/book_name"
+        android:id="@+id/book_Name1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="8dp"
-        android:text="書籍名"
+        android:text="書籍名:"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/Book_Image1"
         app:layout_constraintTop_toTopOf="@+id/Book_Image1" />
@@ -111,30 +233,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="4dp"
         android:text="作者名:"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/book_name"
-        app:layout_constraintTop_toBottomOf="@+id/book_name" />
-
-    <ImageView
-        android:id="@+id/Book_Image2"
-        android:layout_width="50dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Book_Image1"
-        app:srcCompat="@drawable/book" />
+        app:layout_constraintStart_toStartOf="@+id/book_Name1"
+        app:layout_constraintTop_toBottomOf="@+id/book_Name1" />
 
     <TextView
-        android:id="@+id/book_name2"
+        android:id="@+id/book_Name2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
         android:layout_marginTop="8dp"
-        android:text="書籍名"
+        android:text="書籍名:"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/Book_Image2"
+        app:layout_constraintStart_toStartOf="@+id/book_Name1"
         app:layout_constraintTop_toTopOf="@+id/Book_Image2" />
 
     <TextView
@@ -142,11 +254,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="4dp"
         android:text="作者名:"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/book_name2"
-        app:layout_constraintTop_toBottomOf="@+id/book_name2" />
+        app:layout_constraintStart_toStartOf="@+id/book_Name2"
+        app:layout_constraintTop_toBottomOf="@+id/book_Name2" />
 
     <TextView
         android:id="@+id/Comment"
@@ -171,44 +283,6 @@
         app:layout_constraintStart_toStartOf="@+id/Comment"
         app:layout_constraintTop_toBottomOf="@+id/Comment" />
 
-    <Button
-        android:id="@+id/Send_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="投稿"
-        app:layout_constraintStart_toEndOf="@+id/Comment_Form"
-        app:layout_constraintTop_toTopOf="@+id/Comment_Form" />
-
-    <ImageButton
-        android:id="@+id/Good_Button1"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/good"
-        app:layout_constraintStart_toEndOf="@+id/list_image2"
-        app:layout_constraintTop_toBottomOf="@+id/Author1" />
-
-    <ImageButton
-        android:id="@+id/Bad_Button1"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/bad"
-        app:layout_constraintStart_toEndOf="@+id/Good_Button1"
-        app:layout_constraintTop_toTopOf="@+id/Good_Button1" />
-
-    <ImageView
-        android:id="@+id/User_Image1"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Comment_Form"
-        app:srcCompat="@drawable/user" />
-
     <TextView
         android:id="@+id/User_Name1"
         android:layout_width="wrap_content"
@@ -228,15 +302,6 @@
         app:layout_constraintStart_toEndOf="@+id/User_Name1"
         app:layout_constraintTop_toTopOf="@+id/User_Name1" />
 
-    <ImageButton
-        android:id="@+id/Good_Button2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/good"
-        app:layout_constraintStart_toEndOf="@+id/Created_Date1"
-        app:layout_constraintTop_toTopOf="@+id/Created_Date1" />
-
     <TextView
         android:id="@+id/Good_Number1"
         android:layout_width="wrap_content"
@@ -245,15 +310,6 @@
         android:layout_marginTop="1dp"
         android:text="24"
         android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@+id/Good_Button2"
-        app:layout_constraintTop_toTopOf="@+id/Good_Button2" />
-
-    <ImageButton
-        android:id="@+id/Bad_Button2"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/bad"
         app:layout_constraintStart_toEndOf="@+id/Good_Button2"
         app:layout_constraintTop_toTopOf="@+id/Good_Button2" />
 
@@ -287,15 +343,6 @@
         app:layout_constraintStart_toStartOf="@+id/User_Name2"
         app:layout_constraintTop_toBottomOf="@+id/User_Name2" />
 
-    <ImageView
-        android:id="@+id/User_Image2"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/User_Image1"
-        app:layout_constraintTop_toBottomOf="@+id/User_Image1"
-        app:srcCompat="@drawable/user" />
-
     <TextView
         android:id="@+id/User_Name2"
         android:layout_width="wrap_content"
@@ -315,15 +362,6 @@
         app:layout_constraintStart_toEndOf="@+id/User_Name2"
         app:layout_constraintTop_toTopOf="@+id/User_Name2" />
 
-    <ImageButton
-        android:id="@+id/good_Button3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/good"
-        app:layout_constraintStart_toEndOf="@+id/created_Date2"
-        app:layout_constraintTop_toTopOf="@+id/created_Date2" />
-
     <TextView
         android:id="@+id/good_Number2"
         android:layout_width="wrap_content"
@@ -332,15 +370,6 @@
         android:layout_marginTop="1dp"
         android:text="24"
         android:textSize="10sp"
-        app:layout_constraintStart_toEndOf="@+id/good_Button3"
-        app:layout_constraintTop_toTopOf="@+id/good_Button3" />
-
-    <ImageButton
-        android:id="@+id/bad_Button3"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/bad"
         app:layout_constraintStart_toEndOf="@+id/good_Button3"
         app:layout_constraintTop_toTopOf="@+id/good_Button3" />
 
@@ -353,6 +382,47 @@
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/bad_Button3"
         app:layout_constraintTop_toTopOf="@+id/bad_Button3" />
+
+    <TextView
+        android:id="@+id/book_Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/book_Name1"
+        app:layout_constraintTop_toTopOf="@+id/book_Name1" />
+
+    <TextView
+        android:id="@+id/author_Name2"
+        android:layout_width="42dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/Author2"
+        app:layout_constraintTop_toTopOf="@+id/Author2" />
+
+    <TextView
+        android:id="@+id/author_Name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/Author3"
+        app:layout_constraintTop_toTopOf="@+id/Author3" />
+
+    <TextView
+        android:id="@+id/book_Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/book_Name2"
+        app:layout_constraintTop_toTopOf="@+id/book_Name2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
