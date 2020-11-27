@@ -11,60 +11,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/change_layout"
         android:text="変更"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Bookshelf_button"
-        android:layout_width="94dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="304dp"
-        android:text="本棚"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/RerdList_button"
-        android:layout_width="108dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="304dp"
-        android:layout_marginEnd="64dp"
-        android:text="リードリスト"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/Good_button"
-        android:layout_width="124dp"
+        android:layout_width="148dp"
         android:layout_height="82dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="20dp"
-        android:text="お気に入りのリードリスト"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="412dp"
+        android:text="お気に入りの                リードリスト"
+        android:background="@drawable/mypage_button_background"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Bookshelf_button" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Name_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="ユーザーネーム"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icon_View" />
 
     <Button
         android:id="@+id/Favorite_button"
-        android:layout_width="96dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="146dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="412dp"
         android:text="お気に入りの本"
-        app:layout_constraintStart_toEndOf="@+id/Good_button"
-        app:layout_constraintTop_toBottomOf="@+id/RerdList_button" />
+        android:background="@drawable/mypage_button_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/icon_View"
@@ -79,10 +61,11 @@
 
     <TextView
         android:id="@+id/Follow_View"
-        android:layout_width="68dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="92dp"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
         android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Follow_button" />
 
@@ -91,28 +74,51 @@
         android:layout_width="61dp"
         android:layout_height="24dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="84dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Follower_button" />
 
     <Button
         android:id="@+id/Follow_button"
-        android:layout_width="100dp"
+        android:layout_width="96dp"
         android:layout_height="55dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="208dp"
+        android:background="@drawable/clear"
         android:text="フォロー数"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Follower_button"
-        android:layout_width="117dp"
-        android:layout_height="52dp"
+        android:layout_width="103dp"
+        android:layout_height="56dp"
         android:layout_marginTop="208dp"
         android:layout_marginEnd="56dp"
+        android:background="@drawable/clear"
         android:text="フォロワー数"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/readlist_imageButton"
+        android:layout_width="148dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/readlist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bookshelf_imageButton"
+        android:layout_width="149dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="308dp"
+        android:background="@drawable/bookshelf"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
