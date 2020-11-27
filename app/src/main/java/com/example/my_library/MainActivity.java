@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user);
         setContentView(R.layout.mypage);
-        setContentView(R.layout.new_registration);
         setContentView(R.layout.login);
         setContentView(R.layout.user_followlist);
         setContentView(R.layout.user_follower);
@@ -37,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.withdrawal_verification);
         setContentView(R.layout.favorite_myread_list);
         setContentView(R.layout.myread_list_details);
+        setContentView(R.layout.new_registration);
     }
 
     //ヘッダー　メニュー表示
