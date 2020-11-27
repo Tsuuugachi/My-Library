@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -26,9 +27,9 @@
 
     <ImageView
         android:id="@+id/book_Image1"
-        android:layout_width="98dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="70dp"
+        android:layout_width="72dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="90dp"
         android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,36 +37,42 @@
 
     <ImageView
         android:id="@+id/book_Image2"
-        android:layout_width="59dp"
-        android:layout_height="48dp"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
         app:layout_constraintStart_toEndOf="@+id/book_Image1"
         app:layout_constraintTop_toTopOf="@+id/book_Image1"
         app:srcCompat="@drawable/book" />
 
     <ImageView
         android:id="@+id/book_Image3"
-        android:layout_width="59dp"
-        android:layout_height="48dp"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
         app:layout_constraintStart_toEndOf="@+id/book_Image2"
         app:layout_constraintTop_toTopOf="@+id/book_Image2"
         app:srcCompat="@drawable/book" />
 
     <Button
         android:id="@+id/list_Button1"
-        android:layout_width="107dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="237dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/shape_rounded_corners"
+        android:gravity="bottom|right"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="45dp"
+        android:paddingBottom="10dp"
         android:text="一覧を見る"
-        app:layout_constraintStart_toEndOf="@+id/book_Image1"
-        app:layout_constraintTop_toBottomOf="@+id/book_Image2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sort" />
 
     <ImageView
         android:id="@+id/book_Image4"
-        android:layout_width="98dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="70dp"
+        android:layout_width="72dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="90dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/book_Image1"
@@ -73,36 +80,40 @@
 
     <ImageView
         android:id="@+id/book_Image5"
-        android:layout_width="59dp"
-        android:layout_height="48dp"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
         app:layout_constraintStart_toEndOf="@+id/book_Image4"
         app:layout_constraintTop_toTopOf="@+id/book_Image4"
         app:srcCompat="@drawable/book" />
 
     <ImageView
         android:id="@+id/book_Image6"
-        android:layout_width="59dp"
-        android:layout_height="48dp"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
         app:layout_constraintStart_toEndOf="@+id/book_Image5"
         app:layout_constraintTop_toTopOf="@+id/book_Image5"
         app:srcCompat="@drawable/book" />
 
     <Button
         android:id="@+id/list_Button2"
-        android:layout_width="107dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="237dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/shape_rounded_corners"
+        android:gravity="bottom|right"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="45dp"
+        android:paddingBottom="10dp"
         android:text="一覧を見る"
-        app:layout_constraintStart_toEndOf="@+id/book_Image4"
-        app:layout_constraintTop_toBottomOf="@+id/book_Image5" />
+        app:layout_constraintStart_toStartOf="@+id/list_Button1"
+        app:layout_constraintTop_toBottomOf="@+id/list_Button1" />
 
     <ImageView
         android:id="@+id/book_Image7"
-        android:layout_width="98dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="70dp"
+        android:layout_width="72dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="90dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/book_Image4"
@@ -110,30 +121,34 @@
 
     <ImageView
         android:id="@+id/book_Image8"
-        android:layout_width="59dp"
-        android:layout_height="48dp"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
         app:layout_constraintStart_toEndOf="@+id/book_Image7"
         app:layout_constraintTop_toTopOf="@+id/book_Image7"
         app:srcCompat="@drawable/book" />
 
     <ImageView
         android:id="@+id/book_Image9"
-        android:layout_width="59dp"
-        android:layout_height="48dp"
+        android:layout_width="56dp"
+        android:layout_height="62dp"
         app:layout_constraintStart_toEndOf="@+id/book_Image8"
         app:layout_constraintTop_toTopOf="@+id/book_Image8"
         app:srcCompat="@drawable/book" />
 
     <Button
         android:id="@+id/list_Button3"
-        android:layout_width="107dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="237dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/shape_rounded_corners"
+        android:gravity="bottom|right"
+        android:paddingStart="40dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="45dp"
+        android:paddingBottom="10dp"
         android:text="一覧を見る"
-        app:layout_constraintStart_toEndOf="@+id/book_Image7"
-        app:layout_constraintTop_toBottomOf="@+id/book_Image8" />
+        app:layout_constraintStart_toStartOf="@+id/list_Button2"
+        app:layout_constraintTop_toBottomOf="@+id/list_Button2" />
 
     <ImageButton
         android:id="@+id/back_Butoon"
