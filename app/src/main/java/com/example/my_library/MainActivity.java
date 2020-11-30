@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
     }
 
+
     //ヘッダー　メニュー表示
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
