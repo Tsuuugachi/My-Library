@@ -20,7 +20,7 @@
         android:id="@+id/sort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="7dp"
         android:text="並び替え："
         app:layout_constraintEnd_toStartOf="@+id/spinner"
         app:layout_constraintTop_toTopOf="@+id/spinner" />
@@ -29,8 +29,7 @@
         android:id="@+id/spinner"
         android:layout_width="113dp"
         android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:entries="@array/favorite_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -88,10 +87,10 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="247dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
