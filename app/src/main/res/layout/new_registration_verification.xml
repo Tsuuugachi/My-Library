@@ -10,25 +10,23 @@
         android:id="@+id/Registration_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/registration_background"
         android:text="登録"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input_Password_View"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/Return_button"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Return_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/return_background"
         android:text="戻る"
-        app:layout_constraintEnd_toStartOf="@+id/Registration_button"
-        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input_Password_View" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Confirmation_View"
@@ -46,39 +44,62 @@
         android:id="@+id/Mail_Address_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="198dp"
         android:text="メールアドレス"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/Confirmation_View" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Password_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="264dp"
         android:text="パスワード"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Input_Mail_Address_View" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Input_Password_View"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="入力パスワード"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password_View" />
+        android:layout_width="134dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="264dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/Password_View"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Input_Mail_Address_View"
+        android:layout_width="136dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="198dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/Mail_Address_View"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="入力メールアドレス"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:text="ユーザーネーム"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Mail_Address_View" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="130dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="132dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
