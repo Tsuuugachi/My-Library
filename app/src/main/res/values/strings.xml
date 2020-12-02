@@ -13,4 +13,5 @@
     <string name="Genre">ジャンル</string>
     <string name="newReadList">新規リードリストを作成</string>
     <string name="my_read_list">My Read List</string>
+    <string name="isbn_Code">ISBNコード</string>
 </resources>
