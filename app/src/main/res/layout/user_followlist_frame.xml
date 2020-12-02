@@ -29,11 +29,13 @@
         app:srcCompat="?attr/homeAsUpIndicator" />
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="557dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="320dp"
+        android:layout_height="582dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -43,10 +45,9 @@
             android:orientation="vertical">
 
             <ListView
-                android:id="@+id/user"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
+                android:layout_height="550dp" />
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
