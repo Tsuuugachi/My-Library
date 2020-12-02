@@ -11,4 +11,6 @@
     <string name="list_comment">リードリストコメント</string>
     <string name="option">リードリスト名で検索</string>
     <string name="Genre">ジャンル</string>
+    <string name="newReadList">新規リードリストを作成</string>
+    <string name="my_read_list">My Read List</string>
 </resources>
