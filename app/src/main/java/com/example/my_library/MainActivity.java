@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_registration_verification);
+        setContentView(R.layout.user_info_change);
     }
+
 
     //ヘッダー　メニュー表示
     @Override
