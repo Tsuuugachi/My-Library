@@ -52,7 +52,7 @@
                 android:id="@+id/imageView10"
                 android:layout_width="65dp"
                 android:layout_height="46dp"
-                android:layout_marginr="32dp"
+                android:layout_margin="32dp"
                 app:srcCompat="@drawable/user" />
 
             <TextView
