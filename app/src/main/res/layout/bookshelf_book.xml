@@ -6,13 +6,11 @@
     android:layout_height="match_parent">
 
     <TableLayout
-        tools:context=".MainActivity"
         android:layout_width="360dp"
         android:layout_height="644dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <!-- 1行目 -->
 
@@ -102,7 +100,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-
 
                 <Switch
                     android:id="@+id/switch2"
