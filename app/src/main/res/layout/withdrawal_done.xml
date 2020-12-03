@@ -19,8 +19,8 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="112dp"
-        android:layout_height="47dp"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
         android:layout_marginTop="150dp"
         android:background="#C62B2929"
         android:text="ログイン画面"
