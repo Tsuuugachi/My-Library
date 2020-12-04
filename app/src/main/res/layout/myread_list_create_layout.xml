@@ -18,19 +18,19 @@
         android:id="@+id/check_imageButton"
         android:layout_width="48dp"
         android:layout_height="32dp"
-        android:layout_marginStart="40dp"
         android:background="@drawable/check"
-        app:layout_constraintStart_toEndOf="@+id/cerate_textView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/error_textView"
         android:layout_width="143dp"
         android:layout_height="21dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:textColor="#ED3030"
         android:textColorHighlight="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/book" />
 
@@ -38,8 +38,8 @@
         android:id="@+id/name_editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="52dp"
         android:ems="10"
         android:hint="リードリスト名（必須）"
         android:inputType="textPersonName"
@@ -50,8 +50,8 @@
         android:id="@+id/Explanation_editTextTextPersonName"
         android:layout_width="214dp"
         android:layout_height="61dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="リードリストの説明"
         android:inputType="textPersonName"
@@ -62,8 +62,8 @@
         android:id="@+id/release_switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
         android:text="公開"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Explanation_editTextTextPersonName" />
@@ -72,16 +72,16 @@
         android:id="@+id/book"
         android:layout_width="167dp"
         android:layout_height="126dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/Recording"
-        android:layout_width="361dp"
-        android:layout_height="226dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="408dp"
+        android:layout_height="284dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/release_switch">
 
@@ -92,6 +92,7 @@
             android:orientation="vertical">
 
             <ListView
+                android:id="@+id/bookColumn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
@@ -99,11 +100,12 @@
 
     <TextView
         android:id="@+id/cerate_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="211dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
         android:text="リードリスト作成、編集"
+        android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/cancel_imageButton"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
