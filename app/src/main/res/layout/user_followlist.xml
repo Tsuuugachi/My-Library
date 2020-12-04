@@ -7,8 +7,8 @@
     tools:context=".MainActivity">
 
     <TableLayout
-        android:layout_width="339dp"
-        android:layout_height="65dp"
+        android:layout_width="340dp"
+        android:layout_height="49dp"
         android:layout_marginTop="5dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
 
             <Button
                 android:id="@+id/follow_button"
-                android:layout_width="54dp"
+                android:layout_width="64dp"
                 android:layout_height="31dp"
                 android:layout_marginStart="120dp"
                 android:layout_marginTop="10dp"
@@ -53,35 +53,6 @@
 
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-
-            <TextView
-                android:id="@+id/last_login"
-                android:layout_width="77dp"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:text="最終ログイン:"
-                android:textSize="10sp"
-                app:layout_constraintStart_toEndOf="@+id/user_image"
-                app:layout_constraintTop_toBottomOf="@+id/user_name" />
-
-            <TextView
-                android:id="@+id/login_day"
-                android:layout_width="182dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:text="2020/11/04"
-                android:textSize="10sp"
-                app:layout_constraintStart_toEndOf="@+id/last_login1"
-                app:layout_constraintTop_toBottomOf="@+id/user_name" />
-        </TableRow>
 
     </TableLayout>
 
