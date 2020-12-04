@@ -24,10 +24,34 @@
         <menu>
             <item
                 android:id="@+id/paperback_Button"
+                android:title="単行本" />
+            <item
+                android:id="@+id/Paperback"
                 android:title="文庫" />
             <item
+                android:id="@+id/Newbook"
+                android:title="新書" />
+            <item
+                android:id="@+id/Wholebook"
+                android:title="全書・双書" />
+            <item
+                android:id="@+id/Mucc"
+                android:title="ムック・カレンダー" />
+            <item
+                android:id="@+id/Encyclopedia"
+                android:title="辞典・事典" />
+            <item
+                android:id="@+id/Picturebook1"
+                android:title="図鑑" />
+            <item
+                android:id="@+id/Picturebook2"
+                android:title="絵本" />
+            <item
+                android:id="@+id/Magneticmedia"
+                android:title="磁性媒体" />
+            <item
                 android:id="@+id/comic_Button"
-                android:title="コミック" />
+                android:title="コミックス" />
         </menu>
     </item>
     <item
