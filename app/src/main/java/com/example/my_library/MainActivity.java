@@ -19,6 +19,14 @@ import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.user_followlist_frame);
+    }
+
+
+
     //ヘッダー　メニュー表示
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
