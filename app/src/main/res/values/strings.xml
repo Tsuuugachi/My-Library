@@ -1,4 +1,6 @@
 <resources>
+    <!-- アプリバー　タイトル -->
+    <string name="app_name">My-Library</string>
     <string name="login">ログイン</string>
     <string name="new_account">新規登録</string>
     <string name="user_name">User Name</string>
@@ -7,10 +9,12 @@
     <string name="button31">(3,1)</string>
     <string name="button32">(3,2)</string>
     <string name="button33">(3,3)</string>
-    <string name="app_name">My- Library</string>
     <string name="list_comment">リードリストコメント</string>
     <string name="option">リードリスト名で検索</string>
     <string name="Genre">ジャンル</string>
     <string name="newReadList">新規リードリストを作成</string>
     <string name="my_read_list">My Read List</string>
+    <string name="isbn_Code">ISBNコード</string>
+    <!-- アプリバー　検索ヒント -->
+    <string name="search_hint">書籍検索</string>
 </resources>
