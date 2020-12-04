@@ -30,11 +30,9 @@
 
     <ScrollView
         android:id="@+id/account_ScrollView"
-        android:layout_width="407dp"
-        android:layout_height="562dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="358dp"
+        android:layout_height="476dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +46,7 @@
             <ListView
                 android:id="@+id/account"
                 android:layout_width="match_parent"
-                android:layout_height="440dp" />
+                android:layout_height="444dp" />
         </LinearLayout>
     </ScrollView>
 
