@@ -40,6 +40,7 @@ public class UserAuthActivity extends AppCompatActivity {
     private static final String Pass = "user_password";
     private static final String Name = "user_name";
 
+    DataBean databean =new DataBean();
 
 
     @Override
@@ -88,6 +89,7 @@ public class UserAuthActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email = ((TextView)findViewById(R.id.email_txt)).getText().toString();
                 String password = ((TextView)findViewById(R.id.password_txt)).getText().toString();
+                databean.setMail(email);
                 signIn(email, password);
             }
         });
@@ -98,6 +100,62 @@ public class UserAuthActivity extends AppCompatActivity {
             }
         });
     }
+
+    //新規登録処理
+    private void createUser(String email, String password) {
+        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    showDialog(user.getUid());
+                }
+            }
+        });
+    }
+    //ログイン処理
+    private void signIn(String email, String password) {
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    showDialog(user.getUid());
+                }
+            }
+        });
+    }
+
+    private void signOut() {
+        FirebaseAuth.getInstance().signOut();
+    }
+
+    private void showDialog(String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(message);
+        builder.setPositiveButton("閉じる", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        Dialog dialog = builder.create();
+        dialog.show();
+    }
+            // ...
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        updateUI(currentUser);
+    }
+
+    private void updateUI(@Nullable FirebaseUser user) {
+        // No-op
+    }
+}
 
   /*  public void sendEmailVerificationWithContinueUrl() {
         // [START send_email_verification_with_continue_url]
@@ -171,59 +229,3 @@ public class UserAuthActivity extends AppCompatActivity {
         // [END auth_verify_sign_in_link]
     }
     */
-    //新規登録処理
-    private void createUser(String email, String password) {
-        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    FirebaseUser user = mAuth.getCurrentUser();
-                    showDialog(user.getUid());
-                }
-            }
-        });
-    }
-    //ログイン処理
-    private void signIn(String email, String password) {
-        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    FirebaseUser user = mAuth.getCurrentUser();
-                    showDialog(user.getUid());
-                }
-            }
-        });
-    }
-
-    private void signOut() {
-        FirebaseAuth.getInstance().signOut();
-    }
-
-    private void showDialog(String message) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage(message);
-        builder.setPositiveButton("閉じる", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        Dialog dialog = builder.create();
-        dialog.show();
-    }
-            // ...
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
-    }
-
-    private void updateUI(@Nullable FirebaseUser user) {
-        // No-op
-    }
-}
-
