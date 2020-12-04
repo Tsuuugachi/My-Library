@@ -6,15 +6,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.widget.ScrollView;
 
 import java.util.ArrayList;
 
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
-import android.widget.EditText;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
             // リストビューに表示する要素を設定
             ArrayList<SampleListItem> listItems = new ArrayList<>();
-            for (int i = 0; i < 10; i++) {
-                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.id.imageView);
+            for (int i = 0; i < 20; i++) {
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.id.account_ImageView);
                 SampleListItem item = new SampleListItem(bmp, "name" + String.valueOf(i));
                 listItems.add(item);
             }
