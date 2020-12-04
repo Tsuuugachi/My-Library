@@ -135,4 +135,15 @@
         android:textColor="#ff0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTmail" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="212dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ED5454"
+        app:layout_constraintEnd_toEndOf="@+id/error_textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
