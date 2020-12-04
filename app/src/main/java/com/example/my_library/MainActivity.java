@@ -4,20 +4,48 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.widget.ScrollView;
+
+import java.util.ArrayList;
 
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
-import android.view.Menu;
 import android.view.ViewGroup;
-import android.view.View;
 import android.widget.EditText;
-import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
+
+    /**
+     * アクティビティ生成時に呼ばれる
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+            setContentView(R.layout.user_followlist_frame);
+
+            // レイアウトからリストビューを取得
+            ListView listView = (ListView)findViewById(R.id.account);
+
+            // リストビューに表示する要素を設定
+            ArrayList<SampleListItem> listItems = new ArrayList<>();
+            for (int i = 0; i < 10; i++) {
+                Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.id.imageView);
+                SampleListItem item = new SampleListItem(bmp, "name" + String.valueOf(i));
+                listItems.add(item);
+            }
+
+            // 出力結果をリストビューに表示
+            SampleListAdapter adapter = new SampleListAdapter(this, R.layout.user_followlist, listItems);
+            listView.setAdapter(adapter);
+
     }
+
 
 
     //ヘッダー　メニュー表示
