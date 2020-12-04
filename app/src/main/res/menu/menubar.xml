@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="検索"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/user_Icon"
+        android:icon="@drawable/user"
+        android:orderInCategory="100"
+        android:title="ユーザー"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/genre_Button"
+        android:title="ジャンル">
+        <menu>
+            <item
+                android:id="@+id/paperback_Button"
+                android:title="文庫" />
+            <item
+                android:id="@+id/comic_Button"
+                android:title="コミック" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/readlist_Button"
+        android:title="リードリスト" />
+    <item
+        android:id="@+id/ranking_Button"
+        android:title="ランキング" />
+    <item
+        android:id="@+id/favorite_Button"
+        android:title="お気に入り" >
+        <menu >
+            <item
+                android:id="@+id/books_Button"
+                android:title="書籍" />
+            <item
+                android:id="@+id/favorite_Readrist"
+                android:title="リードリスト" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/bookshelf_Button"
+        android:title="本棚" />
+    <item
+        android:id="@+id/barcode_Button"
+        android:title="バーコード読み取り" />
+    <item
+        android:id="@+id/user_Button"
+        android:title="ユーザー詳細" />
+    <item android:title="ユーザー情報変更" />
+    <item
+        android:id="@+id/logout_Button"
+        android:title="ログアウト" />
+</menu>
