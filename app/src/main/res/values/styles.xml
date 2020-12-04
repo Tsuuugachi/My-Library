@@ -1,12 +1,10 @@
 <resources>
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- アプリバー　設定 -->
-        <item name="colorPrimary">@color/menuBar_color</item>
-        <item name="colorPrimaryDark">@color/notificationBar_color</item>
-        <item name="colorAccent">@color/textBox_color</item>
-        <item name="actionMenuTextColor">@color/textColor</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#E1FDB5</item>
+        <item name="colorPrimaryDark">#4CAF50</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
-
-
 </resources>
