@@ -1,15 +1,10 @@
 <resources>
-<<<<<<< HEAD
     <string name="app_name">My- Library</string>
-=======
->>>>>>> parent of 1b5499b... Merge pull request #94 from Tsuuugachi/#128Header
     <string name="login">ログイン</string>
     <string name="new_account">新規登録</string>
-    <string name="mail">Mail</string>
+    <string name="user_name">User Name</string>
+    <string name="mail">Mail Address</string>
     <string name="password">Password</string>
-<<<<<<< HEAD
-</resources>
-=======
     <string name="button31">(3,1)</string>
     <string name="button32">(3,2)</string>
     <string name="button33">(3,3)</string>
@@ -21,4 +16,3 @@
     <string name="my_read_list">My Read List</string>
     <string name="isbn_Code">ISBNコード</string>
 </resources>
->>>>>>> parent of 1b5499b... Merge pull request #94 from Tsuuugachi/#128Header

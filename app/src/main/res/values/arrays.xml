@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>閲覧順</item>
+        <item>登録数</item>
+    </string-array>
+    <string-array name="planets_option">
+        <item>編集</item>
+        <item>削除</item>
+        <item>シェア</item>
+    </string-array>
+    <string-array name="Order">
+        <item>登録順</item>
+        <item>あ順昇順</item>
+        <item>あ順降順</item>
+    </string-array>
+    <string-array name="planets_favorite">
+        <item>最新観覧昇順</item>
+        <item>最新観覧降順</item>
+        <item>登録昇順</item>
+        <item>登録降順</item>
+    </string-array>
+    <string-array name="planets_readrist">
+        <item>お気に入りに追加</item>
+        <item>リードリストに追加</item>
+        <item>作者</item>
+        <item>この本を含むリードリスト</item>
+        <item>シェア</item>
+    </string-array>
+    <string-array name="user">
+        <item>😄</item>
+        <item>😢</item>
+        <item>😨</item>
+        <item>😏</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/Twitter_imageButton"
+        android:layout_width="33dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/twitter"
+        app:layout_constraintEnd_toStartOf="@+id/Cooperation_button"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/Cooperation_button"
+        android:layout_width="90dp"
+        android:layout_height="33dp"
+        android:text="Twitterと連携"
+        android:textSize="8sp"
+        android:background="@drawable/button_customize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/Icon_imageView"
+        android:layout_width="108dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Current_Password"
+        android:layout_width="318dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="現在のパスワードを入力してください"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name_textView" />
+
+    <Button
+        android:id="@+id/Change_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_customize"
+        android:text="変更"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Current_button"
+        android:layout_width="171dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/withdrawal_background"
+        android:text="退会"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Current_Password" />
+
+    <EditText
+        android:id="@+id/Name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/Change_button1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Icon_imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
