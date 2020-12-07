@@ -27,11 +27,13 @@
 
             <TextView
                 android:id="@+id/book_Text"
-                android:layout_width="wrap_content"
+                android:layout_width="159dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
-                android:text="book_name"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="書籍の名前"
                 android:textSize="18sp" />
         </TableRow>
 
