@@ -5,15 +5,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuInflater;
-import android.content.Intent;
-
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.widget.ScrollView;
+import java.util.ArrayList;
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
-import android.view.Menu;
 import android.view.ViewGroup;
-import android.view.View;
 import android.widget.EditText;
-import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
     }
+
 
 
     //ヘッダー　メニュー表示
@@ -68,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
-
 
 
 }
