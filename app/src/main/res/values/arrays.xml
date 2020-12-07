@@ -27,5 +27,11 @@
         <item>この本を含むリードリスト</item>
         <item>シェア</item>
     </string-array>
+    <string-array name="user">
+        <item>😄</item>
+        <item>😢</item>
+        <item>😨</item>
+        <item>😏</item>
+    </string-array>
 
 </resources>
