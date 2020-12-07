@@ -25,8 +25,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="343dp"
-        android:layout_height="507dp"
+        android:layout_width="365dp"
+        android:layout_height="529dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +38,7 @@
             android:orientation="vertical">
 
             <ListView
+                android:id="@+id/book"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
