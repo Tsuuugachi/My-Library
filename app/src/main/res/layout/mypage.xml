@@ -6,126 +6,116 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/Crack_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/change_layout"
-        android:text="変更"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/Good_button"
-        android:layout_width="148dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="412dp"
-        android:text="お気に入りの                リードリスト"
-        android:background="@drawable/mypage_button_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/Crack_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/change_layout"
+            android:text="変更" />
 
-    <TextView
-        android:id="@+id/Name_View"
-        android:layout_width="290dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="12dp"
-        android:gravity="center_horizontal"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon_View" />
+        <ImageView
+            android:id="@+id/icon_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:srcCompat="@tools:sample/avatars" />
 
-    <Button
-        android:id="@+id/Favorite_button"
-        android:layout_width="146dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="412dp"
-        android:text="お気に入りの本"
-        android:background="@drawable/mypage_button_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/Name_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:text="@string/user_name" />
 
-    <ImageView
-        android:id="@+id/icon_View"
-        android:layout_width="118dp"
-        android:layout_height="131dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
 
-    <TextView
-        android:id="@+id/Follow_View"
-        android:layout_width="60dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="50dp"
-        android:gravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.334"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Follow_button" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/Follower_View"
-        android:layout_width="61dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="4dp"
-        android:gravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Follower_button" />
+                <Button
+                    android:id="@+id/Follower_button"
+                    android:layout_width="103dp"
+                    android:layout_height="56dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/clear"
+                    android:text="フォロワー" />
 
-    <Button
-        android:id="@+id/Follow_button"
-        android:layout_width="96dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="208dp"
-        android:background="@drawable/clear"
-        android:text="フォロー数"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/Follow_button"
+                    android:layout_width="96dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/clear"
+                    android:text="フォロー" />
+            </TableRow>
 
-    <Button
-        android:id="@+id/Follower_button"
-        android:layout_width="103dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="56dp"
-        android:background="@drawable/clear"
-        android:text="フォロワー数"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        </TableLayout>
 
-    <ImageButton
-        android:id="@+id/readlist_imageButton"
-        android:layout_width="148dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="308dp"
-        android:background="@drawable/readlist"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
 
-    <ImageButton
-        android:id="@+id/bookshelf_imageButton"
-        android:layout_width="149dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="308dp"
-        android:background="@drawable/bookshelf"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Favorite_button"
+                android:layout_width="146dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/mypage_button_background"
+                android:text="お気に入りの本" />
+
+            <Button
+                android:id="@+id/Good_button"
+                android:layout_width="146dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/mypage_button_background"
+                android:text="お気に入りのリードリスト" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/readlist_imageButton"
+                android:layout_width="149dp"
+                android:layout_height="84dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/readlist" />
+
+            <ImageButton
+                android:id="@+id/bookshelf_imageButton"
+                android:layout_width="149dp"
+                android:layout_height="84dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bookshelf" />
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
