@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.favorite_book);
-
 
         //　コンテキストメニュー表示
         View view1 = findViewById(R.id.book_Image);
