@@ -63,26 +63,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Input_Password_View"
-        android:layout_width="134dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="264dp"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/Password_View"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Input_Mail_Address_View"
-        android:layout_width="136dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="198dp"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/Mail_Address_View"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,13 +73,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="130dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="132dp"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
+    <ListView
+        android:id="@+id/Confirmation"
+        android:layout_width="215dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toEndOf="@+id/Mail_Address_View"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

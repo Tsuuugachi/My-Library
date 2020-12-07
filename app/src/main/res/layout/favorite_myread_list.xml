@@ -6,68 +6,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/page_Button7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/border"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/page_Button6"
+        app:layout_constraintTop_toTopOf="@+id/page_Button6" />
+
+    <Button
+        android:id="@+id/page_Button8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/border"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/page_Button7"
+        app:layout_constraintTop_toTopOf="@+id/page_Button7" />
+
+    <ImageButton
+        android:id="@+id/move_Button3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/move"
+        app:layout_constraintStart_toEndOf="@+id/page_Button8"
+        app:layout_constraintTop_toTopOf="@+id/page_Button8" />
+
+    <Button
+        android:id="@+id/page_Button6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/topbutton2"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <ImageButton
+        android:id="@+id/topbutton2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="269dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sort_textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/raed_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
     <Spinner
-        android:id="@+id/sort_spinner"
+        android:id="@+id/sort_spinner5"
         android:layout_width="51dp"
         android:layout_height="49dp"
         android:entries="@array/planets_favorite"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/onebutton"
-        android:layout_width="39dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="27dp"
-        android:text="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/topbutton" />
-
-    <ImageButton
-        android:id="@+id/Book_imageButton"
-        android:layout_width="94dp"
-        android:layout_height="138dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="140dp"
-        android:background="@drawable/book"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/topbutton"
-        android:layout_width="61dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="60dp"
-        android:text="＜＜"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/lastbutton"
-        android:layout_width="61dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="33dp"
-        android:text="＞＞"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/onebutton" />
-
-    <Button
-        android:id="@+id/List_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="188dp"
-        android:layout_marginTop="216dp"
-        android:text="一覧を見る"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/ReadList_nametextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="104dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -75,9 +91,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
         android:text="並び替え"
-        app:layout_constraintEnd_toStartOf="@+id/sort_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/sort_spinner5"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
