@@ -6,7 +6,8 @@
     android:width="2dp"
     android:color="#00b489"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
 
     <ImageView
         android:id="@+id/Book_imageView"
