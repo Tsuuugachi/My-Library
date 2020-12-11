@@ -71,9 +71,10 @@
                 android:id="@+id/author_name"
                 android:layout_width="111dp"
                 android:layout_height="43dp"
+                android:layout_span="3"
                 android:ellipsize="end"
-                android:maxLines="1"/>
-
+                android:maxLines="1"
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
