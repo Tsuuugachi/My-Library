@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Book_imageButton"
+                android:layout_width="119dp"
+                android:layout_height="145dp"
+                app:srcCompat="@drawable/book" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Raed_Name_textView"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/NameView"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Raed_Name_textView" />
+
+    <ImageButton
+        android:id="@+id/Starr_imageButton"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="59dp"
+        android:background="@drawable/star"
+        app:layout_constraintEnd_toEndOf="@+id/Pen_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <ImageButton
+        android:id="@+id/Pen_imageButton"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/pen"
+        app:layout_constraintEnd_toStartOf="@+id/GarbageimageButton"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <ImageButton
+        android:id="@+id/GarbageimageButton"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/garbage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/Explanation_textView"
+        android:layout_width="327dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameView" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="リードリストの公開"
+        app:layout_constraintStart_toEndOf="@+id/Bad_textView"
+        app:layout_constraintTop_toBottomOf="@+id/Explanation_textView" />
+
+    <ImageView
+        android:id="@+id/Bad_imageButton"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/Good_textView"
+        app:layout_constraintTop_toBottomOf="@+id/Explanation_textView"
+        app:srcCompat="@drawable/bad" />
+
+    <ImageView
+        android:id="@+id/Good_imageButton"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Explanation_textView"
+        app:srcCompat="@drawable/good" />
+
+    <TextView
+        android:id="@+id/Good_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/Good_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Explanation_textView" />
+
+    <TextView
+        android:id="@+id/Bad_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/Bad_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Explanation_textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
