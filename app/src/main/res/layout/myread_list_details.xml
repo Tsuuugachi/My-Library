@@ -62,7 +62,7 @@
         android:layout_marginTop="11dp"
         android:text="収録リードリスト"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/book" />
+        app:layout_constraintTop_toBottomOf="@+id/booklistView" />
 
     <TextView
         android:id="@+id/Coment_textView2"
@@ -85,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
-        android:id="@+id/book"
+        android:id="@+id/booklistView"
         android:layout_width="359dp"
         android:layout_height="218dp"
         app:layout_constraintStart_toStartOf="parent"
