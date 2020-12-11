@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -36,6 +35,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
+                    android:id="@+id/bookimage1"
                     android:layout_width="61dp"
                     android:layout_height="114dp"
                     android:background="@drawable/book"
@@ -53,18 +53,20 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
+                        android:id="@+id/bookimage2"
                         android:layout_width="55dp"
                         android:layout_height="59dp"
                         android:background="@drawable/book"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
+                        android:id="@+id/bookimage3"
                         android:layout_width="54dp"
                         android:layout_height="54dp"
                         android:background="@drawable/book"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -79,7 +81,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/readListName"
+                    android:id="@+id/read_list_name"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -97,15 +99,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_weight="0.5">
-
-                    <TextView
-                        android:id="@+id/booksum"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
 
                     <TextView
                         android:id="@+id/date"
