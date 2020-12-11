@@ -3,16 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <ImageButton
-        android:id="@+id/garbage_imageButton2"
-        android:layout_width="76dp"
-        android:layout_height="61dp"
-        android:background="@drawable/garbagecan"
-        app:layout_constraintStart_toEndOf="@+id/sort_spinner3"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/sort_spinner3"
@@ -20,13 +13,14 @@
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="92dp"
-        android:entries="@array/Order"
+        android:entries="@array/favorite_array"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="343dp"
-        android:layout_height="507dp"
+        android:id="@+id/booklistView"
+        android:layout_width="365dp"
+        android:layout_height="529dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,6 +32,7 @@
             android:orientation="vertical">
 
             <ListView
+                android:id="@+id/book"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>

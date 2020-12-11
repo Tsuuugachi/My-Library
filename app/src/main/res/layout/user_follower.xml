@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <TableLayout
         android:layout_width="352dp"
@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".MainActivity">
+        tools:context=".activity.MainActivity">
 
         <TableRow
             android:layout_width="match_parent"
@@ -28,16 +28,14 @@
                 android:layout_marginTop="7dp"
                 app:srcCompat="@drawable/user" />
 
-            <TextView
+            <Button
                 android:id="@+id/user_name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="38dp"
                 android:layout_marginStart="0dp"
                 android:layout_marginTop="10dp"
-                android:text="user_name"
-                android:textSize="15dp"
-                app:layout_constraintStart_toEndOf="@+id/user_image"
-                app:layout_constraintTop_toTopOf="@+id/user_image" />
+                android:background="#00000000"
+                android:text="user_name" />
 
             <Button
                 android:id="@+id/follow_button"
