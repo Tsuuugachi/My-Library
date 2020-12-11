@@ -3,4 +3,12 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="RED">#0FFFFFFF</color>
+    <!-- アプリバー　背景色 -->
+    <color name="menuBar_color">#EE7AF378</color>
+    <!-- 通知バー　背景色 -->
+    <color name="notificationBar_color">#07BF36</color>
+    <!-- テキストボックス　背景色 -->
+    <color name="textBox_color">#FF03DAC5</color>
+    <color name="textColor">#1C1E1E</color>
 </resources>
