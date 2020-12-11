@@ -1,11 +1,8 @@
 package com.example.my_library;
 
 import android.app.Activity;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,7 +10,6 @@ import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.gson.JsonObject;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,6 +23,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+
 //参考URL
 //https://akira-watson.com/android/asynctask.html
 /**
@@ -48,9 +45,9 @@ public final class AsyncHttpRequest extends AsyncTask<URL, Void, String> {
     }
 
     /**
-     * 非同期処理で天気情報を取得する.
+     * 非同期処理でopendbの情報を取得する.
      * @param urls 接続先のURL
-     * @return 取得した天気情報
+     * @return 取得したメッセージ
      */
     @Override
     protected String doInBackground(URL... urls) {
@@ -66,6 +63,7 @@ public final class AsyncHttpRequest extends AsyncTask<URL, Void, String> {
         final String cover;
         final String ISBN;
         final String bookgenre;
+        final String mas;
 
         try {
             //指定のURLにGETで接続する設定
@@ -78,8 +76,9 @@ public final class AsyncHttpRequest extends AsyncTask<URL, Void, String> {
 
             final int statusCode = con.getResponseCode();
             if (statusCode != HttpURLConnection.HTTP_OK) {
+
                 System.err.println("正常に接続できていません。statusCode:" + statusCode);
-                return null;
+                return mas = "正しいISBNコードを打ち込んでください";
             }
 
             // レスポンス(JSON文字列)を読み込む準備
@@ -104,40 +103,18 @@ public final class AsyncHttpRequest extends AsyncTask<URL, Void, String> {
             Log.d(TAG,response.toString());
 
             JSONArray jsonArray = new JSONArray(response.toString());
-            Log.d(TAG,"あああああああああああああああああなんでだよおおおおおおおおおおおおおおおおおおおおお");
 
 
-                JSONObject jsonObject = jsonArray.getJSONObject(0);
-                JSONObject priceArray = jsonObject.getJSONObject("onix").getJSONObject("ProductSupply").getJSONObject("SupplyDetail").getJSONArray("Price").getJSONObject(0);
-                JSONObject genreArray = jsonObject.getJSONObject("onix").getJSONObject("DescriptiveDetail").getJSONArray("Subject").getJSONObject(0);
+            JSONObject jsonObject = jsonArray.getJSONObject(0);
+            JSONObject priceArray = jsonObject.getJSONObject("onix").getJSONObject("ProductSupply").getJSONObject("SupplyDetail").getJSONArray("Price").getJSONObject(0);
+            JSONObject genreArray = jsonObject.getJSONObject("onix").getJSONObject("DescriptiveDetail").getJSONArray("Subject").getJSONObject(0);
 
-                ISBN = jsonObject.getJSONObject("summary").getString("isbn");
+            ISBN = jsonObject.getJSONObject("summary").getString("isbn");
             title = jsonObject.getJSONObject("summary").getString("title");
             cover = jsonObject.getJSONObject("summary").getString("cover");
             author_name = jsonObject.getJSONObject("summary").getString("author");
             price  = priceArray.getString("PriceAmount");
             genre = genreArray.getString("SubjectCode");
-
-
-
-           // title = getbook.getJSONObject("DescriptiveDetail").getJSONObject("TitleDetail").getJSONObject("TitleElement").getJSONObject("TitleText").getString("content");
-           // Log.d(TAG,"あああああああああああああああああなんでだよおおおおおおおおおおおおおおおおおおおおお"+title);
-
-            //author_name = getbook.getJSONObject("DescriptiveDetail").getJSONObject("Contributor").getJSONObject("PersonName").getString("content");
-            //Log.d(TAG,"あああああああああああああああああなんでだよおおおおおおおおおおおおおおおおおおおおお"+author_name);
-
-           // cover = getbook.getJSONObject("SupportingResource").getJSONObject("ResourceVersion").getString("ResourceLink");
-           // Log.d(TAG,"あああああああああああああああああなんでだよおおおおおおおおおおおおおおおおおおおおお"+cover);
-
-           // ISBN = getbook.getString("RecordReference");
-           // Log.d(TAG,"あああああああああああああああああなんでだよおおおおおおおおおおおおおおおおおおおおお"+ISBN);
-
-           // price = getbook.getJSONObject("ProductSupply").getJSONObject("SupplyDetail").getJSONObject("Price").getString("PriceAmount");
-           // Log.d(TAG,"あああああああああああああああああなんでだよおおおおおおおおおおおおおおおおおおおおお"+price);
-
-           // genre = getbook.getJSONObject("DescriptiveDetail").getJSONObject("Subject").getString("SubjectCode");
-          //  Log.d(TAG,"あああああああああああああああああなんでだよおおおおおおおおおおおおおおおおおおおおお"+genre);
-
 
             int aaa = Integer.parseInt(genre);
             int bbb = aaa % 100;
@@ -146,15 +123,12 @@ public final class AsyncHttpRequest extends AsyncTask<URL, Void, String> {
             bookgenre = oi.toString();
 
 
-
-
             Map<String, Object> book = new HashMap<>();
             book.put(bookAuthor_name,author_name);
             book.put(bookTitle,title);
             book.put(bookCover,cover);
             book.put(bookPrice,price);
             book.put(bookGenre,bookgenre);
-
 
 
             db.collection("book").document(ISBN)
@@ -172,12 +146,7 @@ public final class AsyncHttpRequest extends AsyncTask<URL, Void, String> {
                         }
                     });
 
-
-
-            String mas ="";
-
-            return mas = "登録できたよ";
-
+            return mas = "登録完了しました";
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -207,4 +176,3 @@ public final class AsyncHttpRequest extends AsyncTask<URL, Void, String> {
         }
     }
 }
-
