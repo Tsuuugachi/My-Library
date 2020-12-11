@@ -4,48 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <TableLayout
+        android:layout_width="352dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
 
-        <ImageButton
-            android:id="@+id/return_button"
-            android:layout_width="39dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="18dp"
-            android:background="@android:color/transparent"
-            app:srcCompat="?attr/homeAsUpIndicator" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="69dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/user" />
 
-        <ImageButton
-            android:id="@+id/save_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="27dp"
-            android:background="@android:color/transparent"
-            app:srcCompat="@android:drawable/ic_menu_add" />
+            <Button
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="12dp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/follow_button"
+                android:layout_width="64dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rounded_corners"
+                android:text="フォロー"
+                android:textColor="@color/color_selector"
+                app:layout_constraintStart_toEndOf="@+id/user_name"
+                app:layout_constraintTop_toTopOf="@+id/user_name" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="695dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp">
+        </TableRow>
 
-    </ScrollView>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/last_login"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:text="最終ログイン:"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/user_image"
+                app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+            <TextView
+                android:id="@+id/login_day"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/last_login1"
+                app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
