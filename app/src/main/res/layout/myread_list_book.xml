@@ -36,38 +36,12 @@
 
                 <ImageView
                     android:id="@+id/bookimage1"
-                    android:layout_width="61dp"
+                    android:layout_width="114dp"
                     android:layout_height="114dp"
                     android:background="@drawable/book"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <ImageView
-                        android:id="@+id/bookimage2"
-                        android:layout_width="55dp"
-                        android:layout_height="59dp"
-                        android:background="@drawable/book"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/bookimage3"
-                        android:layout_width="54dp"
-                        android:layout_height="54dp"
-                        android:background="@drawable/book"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
