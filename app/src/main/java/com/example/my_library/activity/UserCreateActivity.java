@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.my_library.R;
+import com.example.my_library.UserAuthActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -46,12 +47,12 @@ public class UserCreateActivity extends AppCompatActivity {
         findViewById(R.id.Account_Registration_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String email = ((TextView)findViewById(R.id.eTmail)).getText().toString();
-                String user_password = ((TextView)findViewById(R.id.eTPassword)).getText().toString();
-                String user_name = ((TextView)findViewById(R.id.editTextTextPersonName)).getText().toString();
+                String email = ((TextView) findViewById(R.id.eTmail)).getText().toString();
+                String user_password = ((TextView) findViewById(R.id.eTPassword)).getText().toString();
+                String user_name = ((TextView) findViewById(R.id.editTextTextPersonName)).getText().toString();
                 String user_image = "image.jpeg";
 
-                Map<String, Object> note =new HashMap<>();
+                Map<String, Object> note = new HashMap<>();
                 note.put(Image, user_image);
                 note.put(Name, user_name);
                 note.put(Pass, user_password);
@@ -63,7 +64,7 @@ public class UserCreateActivity extends AppCompatActivity {
                                 Toast.makeText(UserCreateActivity.this, "NoteSaved", Toast.LENGTH_SHORT).show();
                             }
                         })
-                        .addOnFailureListener(new OnFailureListener(){
+                        .addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Toast.makeText(UserCreateActivity.this, "Error!", Toast.LENGTH_SHORT).show();
@@ -80,7 +81,14 @@ public class UserCreateActivity extends AppCompatActivity {
         findViewById(R.id.Login_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplication(),UserAuthActivity.class);
+                Intent intent = new Intent(UserCreateActivity.this, UserAuthActivity.class);
+                startActivity(intent);
+            }
+        });
+        //ログイン
+        findViewById(R.id.Login_button).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplication(), UserAuthActivity.class);
                 startActivity(intent);
             }
         });
@@ -108,4 +116,5 @@ public class UserCreateActivity extends AppCompatActivity {
         // No-op
     }
 }
+
 
