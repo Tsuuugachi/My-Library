@@ -6,9 +6,9 @@
         android:id="@+id/action_search"
         android:orderInCategory="100"
         android:title="検索"
-        android:icon="@drawable/ic_search_black_24dp"
-        app:actionViewClass="android.support.v7.widget.SearchView"
-        app:showAsAction="ifRoom|collapseActionView" />
+        android:icon="@drawable/ic_search_white_24dp"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom" />
 
     <item
         android:id="@+id/user_Icon"
@@ -17,16 +17,41 @@
         android:title="ユーザー"
         app:showAsAction="ifRoom" />
 
+
     <item
         android:id="@+id/genre_Button"
         android:title="ジャンル">
         <menu>
             <item
                 android:id="@+id/paperback_Button"
+                android:title="単行本" />
+            <item
+                android:id="@+id/Paperback"
                 android:title="文庫" />
             <item
+                android:id="@+id/Newbook"
+                android:title="新書" />
+            <item
+                android:id="@+id/Wholebook"
+                android:title="全書・双書" />
+            <item
+                android:id="@+id/Mucc"
+                android:title="ムック・カレンダー" />
+            <item
+                android:id="@+id/Encyclopedia"
+                android:title="辞典・事典" />
+            <item
+                android:id="@+id/Picturebook1"
+                android:title="図鑑" />
+            <item
+                android:id="@+id/Picturebook2"
+                android:title="絵本" />
+            <item
+                android:id="@+id/Magneticmedia"
+                android:title="磁性媒体" />
+            <item
                 android:id="@+id/comic_Button"
-                android:title="コミック" />
+                android:title="コミックス" />
         </menu>
     </item>
     <item
@@ -56,6 +81,9 @@
     <item
         android:id="@+id/user_Button"
         android:title="ユーザー詳細" />
+    <item
+        android:id="@+id/userChange_button"
+        android:title="ユーザー情報変更" />
     <item
         android:id="@+id/logout_Button"
         android:title="ログアウト" />
