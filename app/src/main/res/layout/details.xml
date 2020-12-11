@@ -18,58 +18,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/book" />
 
-    <TextView
-        android:id="@+id/Details_View"
-        android:layout_width="130dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Title_View" />
-
-    <ImageButton
-        android:id="@+id/Star_imageButton"
-        android:layout_width="42dp"
-        android:layout_height="39dp"
-        android:background="@drawable/star"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Book_imageView" />
-
-    <ImageButton
-        android:id="@+id/Add_imageButton"
-        android:layout_width="44dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="6dp"
-        android:background="@drawable/add"
-        app:layout_constraintStart_toEndOf="@+id/Star_imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/Book_imageView" />
-
-    <ImageButton
-        android:id="@+id/Book_shelf_imageButton"
-        android:layout_width="37dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="6dp"
-        android:background="@drawable/book_shelf"
-        app:layout_constraintStart_toEndOf="@+id/Add_imageButton"
-        app:layout_constraintTop_toTopOf="@+id/Add_imageButton" />
-
     <ImageButton
         android:id="@+id/Good_imageButton"
-        android:layout_width="43dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/good"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Star_imageButton" />
 
     <ImageButton
         android:id="@+id/Bad_imageButton"
-        android:layout_width="44dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/bad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Good_imageButton" />
+        app:layout_constraintStart_toEndOf="@+id/Good_textView"
+        app:layout_constraintTop_toBottomOf="@+id/Add_imageButton" />
 
     <TextView
         android:id="@+id/Title_View"
@@ -85,45 +52,34 @@
         android:id="@+id/Good_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toEndOf="@+id/Good_imageButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Star_imageButton" />
 
     <TextView
         android:id="@+id/Bad_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toEndOf="@+id/Bad_imageButton"
-        app:layout_constraintTop_toBottomOf="@+id/Good_textView" />
+        app:layout_constraintTop_toBottomOf="@+id/Add_imageButton" />
 
     <EditText
         android:id="@+id/Review_edit_text"
-        android:layout_width="207dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="336dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
-        app:layout_constraintStart_toEndOf="@+id/Icon_imageButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="197dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:maxLength="128"
+        app:layout_constraintStart_toEndOf="@+id/sort_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/Book_imageView2" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:text="ネタバレ"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Icon_imageButton" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="131dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="80dp"
-        android:text="ネタバレ非表示"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Icon_imageButton" />
 
@@ -132,7 +88,7 @@
         android:layout_width="43dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="1dp"
         android:background="@drawable/user"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name_textView" />
@@ -141,19 +97,19 @@
         android:id="@+id/icon_imageButton"
         android:layout_width="43dp"
         android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="440dp"
         android:background="@drawable/user"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Name_textView" />
 
     <TextView
         android:id="@+id/Name_textView"
-        android:layout_width="1dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="5dp"
-        android:text=""
+        android:layout_width="41dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="8sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Book_imageView2" />
 
@@ -161,152 +117,130 @@
         android:id="@+id/Post_button"
         android:layout_width="66dp"
         android:layout_height="36dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="3dp"
         android:text="投稿"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
         app:layout_constraintTop_toBottomOf="@+id/Review_edit_text" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="48dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="8dp"
-        android:text="お気に入りに追加"
-        android:textSize="8sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Star_imageButton" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="48dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:text="リードリストに追加"
-        android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/Add_imageButton" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="48dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:text="本棚に追加"
-        android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/Book_shelf_imageButton" />
-
-    <ImageView
-        android:id="@+id/Book_imageView2"
-        android:layout_width="66dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/book"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="69dp"
         android:layout_height="23dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
         android:text="この本が入っているリードリスト"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Good_textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Good_textView" />
 
     <Button
         android:id="@+id/All_button"
         android:layout_width="80dp"
         android:layout_height="37dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="260dp"
         android:text="全て表示"
         app:layout_constraintStart_toEndOf="@+id/Book_imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/Details_View" />
-
-    <TextView
-        android:id="@+id/Date_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="507dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/User_name_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="475dp" />
-
-    <TextView
-        android:id="@+id/Review_View"
-        android:layout_width="186dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="116dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Date_textView" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="34dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="524dp"
-        android:background="@drawable/bad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="34dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="528dp"
-        android:background="@drawable/good"
+        android:id="@+id/Star_imageButton"
+        android:layout_width="50dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/favorite"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Book_imageView" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="40dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="272dp"
-        android:layout_marginTop="528dp"
-        android:background="@drawable/comment"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/BadView"
-        android:layout_width="17dp"
-        android:layout_height="31dp"
+        android:id="@+id/Book_shelf_imageButton"
+        android:layout_width="51dp"
+        android:layout_height="37dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="528dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bookshelf"
+        app:layout_constraintStart_toEndOf="@+id/Add_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Book_imageView" />
 
-    <TextView
-        android:id="@+id/GoodView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/Add_imageButton"
+        android:layout_width="50dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/readlist"
+        app:layout_constraintStart_toEndOf="@+id/Star_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Book_imageView" />
+
+    <Spinner
+        android:id="@+id/sort_spinner"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/user"
+        app:layout_constraintStart_toEndOf="@+id/Icon_imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/Book_imageView2" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#ff808080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Post_button" />
+
+    <ImageButton
+        android:id="@+id/Book_imageView2"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="540dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <TextView
-        android:id="@+id/CommentView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="540dp"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ListView
+        android:id="@+id/Details_View"
+        android:layout_width="169dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/Book_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/Title_View" />
+
+    <ScrollView
+        android:id="@+id/review"
+        android:layout_width="361dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/read_list"
+        android:layout_width="282dp"
+        android:layout_height="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Book_imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
