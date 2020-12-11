@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="360dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/user_Image"
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/user_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:text="ユーザー名"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/created_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:text="・2020/10/05　　"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="183dp"
+                android:layout_height="14dp"
+                android:layout_column="1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:text="コメント表示"
+                android:textSize="10sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="360dp"
+        android:layout_height="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/good_Button"
+                android:layout_width="17dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/good" />
+
+            <TextView
+                android:id="@+id/good_Number"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:textSize="10sp" />
+
+            <ImageButton
+                android:id="@+id/bad_Button"
+                android:layout_width="17dp"
+                android:layout_height="14dp"
+                android:background="@drawable/bad" />
+
+            <TextView
+                android:id="@+id/bad_Number"
+                android:layout_width="12dp"
+                android:layout_height="15dp"
+                android:text="34"
+                android:textSize="10sp" />
+
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
