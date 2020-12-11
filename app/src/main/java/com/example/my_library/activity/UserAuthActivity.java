@@ -1,4 +1,4 @@
-package com.example.my_library;
+package com.example.my_library.activity;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -12,6 +12,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.my_library.MyPage;
+import com.example.my_library.R;
 import com.example.my_library.activity.UserCreateActivity;
 import com.example.my_library.bean.DataBean;
 import com.google.android.gms.tasks.OnCompleteListener;
