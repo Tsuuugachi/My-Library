@@ -12,7 +12,15 @@
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< Updated upstream
         tools:context=".activity.MainActivity">
+=======
+        tools:context=".MainActivity">
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
         <TableRow
             android:layout_width="match_parent"
@@ -44,7 +52,15 @@
                 android:id="@+id/icon_imageView"
                 android:layout_width="65dp"
                 android:layout_height="46dp"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 android:layout_margin="32dp"
+=======
+
+>>>>>>> Stashed changes
+=======
+
+>>>>>>> Stashed changes
                 app:srcCompat="@drawable/user" />
 
             <TextView
@@ -97,5 +113,12 @@
 
         </TableRow>
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+
+>>>>>>> Stashed changes
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
