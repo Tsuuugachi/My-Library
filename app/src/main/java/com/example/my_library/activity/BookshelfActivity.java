@@ -1,4 +1,4 @@
-package com.example.my_library;
+package com.example.my_library.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +21,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.my_library.Details;
+import com.example.my_library.R;
+import com.example.my_library.bean.DataBean;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -38,7 +41,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bookshelf extends AppCompatActivity {
+public class BookshelfActivity extends AppCompatActivity {
 
     private ListView lv;
     private DataBean data;
@@ -105,18 +108,18 @@ public class Bookshelf extends AppCompatActivity {
                                                     list.add(item);
 
 
-                                                    BookArrayAdapter adapter = new BookArrayAdapter(Bookshelf.this, R.layout.bookshelf_book, list);
+                                                    BookArrayAdapter adapter = new BookArrayAdapter(BookshelfActivity.this, R.layout.bookshelf_book, list);
                                                     lv = (ListView) findViewById(R.id.book);
                                                     lv.setAdapter(adapter);
                                                 } else {
-                                                    Toast.makeText(Bookshelf.this, "Document does not exist", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(BookshelfActivity.this, "Document does not exist", Toast.LENGTH_SHORT).show();
                                                 }
                                             }
                                         })
                                         .addOnFailureListener(new OnFailureListener() {
                                             @Override
                                             public void onFailure(@NonNull Exception e) {
-                                                Toast.makeText(Bookshelf.this, "Error!", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(BookshelfActivity.this, "Error!", Toast.LENGTH_SHORT).show();
                                                 Log.d(TAG, e.toString());
                                             }
                                         });
@@ -238,7 +241,7 @@ public class Bookshelf extends AppCompatActivity {
 
                     // ボタンがクリックされました
                     public void onClick(View v) {
-                        Intent intent = new Intent(Bookshelf.this, Details.class);
+                        Intent intent = new Intent(BookshelfActivity.this, Details.class);
                         intent.putExtra("msg",item.getIsbn());
                         startActivity(intent);
                     }
@@ -259,7 +262,7 @@ public class Bookshelf extends AppCompatActivity {
             appInfoName.setText(item.getName());
             // アイコンをセット
             image = (ImageView) view.findViewById(R.id.imageBook);
-            Bookshelf.ImageGetTask task2 = new Bookshelf.ImageGetTask(image);
+            BookshelfActivity.ImageGetTask task2 = new BookshelfActivity.ImageGetTask(image);
             task2.execute(item.getImage());
             return view;
         }
