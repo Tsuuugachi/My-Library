@@ -15,7 +15,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,12 +36,13 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class Bookshelf extends AppCompatActivity {
 
     private ListView lv;
+    private DataBean data;
+
 
     private static final String TAG = "Bookshelf";
 
@@ -73,8 +73,10 @@ public class Bookshelf extends AppCompatActivity {
 
 
     public void getbook(){
+        data = (DataBean)getApplication();
+        String mail = data.getMail();
 
-        db.collection("user").document("1801168@s.asojuku.ac.jp").collection("history").
+        db.collection("user").document(mail).collection("history").
                 get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -93,7 +95,6 @@ public class Bookshelf extends AppCompatActivity {
                                                     String book_title  = documentSnapshot.getString(title);
                                                     String book_author_name  = documentSnapshot.getString(author_name);
                                                     String url = documentSnapshot.getString(cover);
-                                                    Log.d(TAG,"ふうううううううううううううううううううざああああけるなああああああああああああああああああああああああああああああああああああ");
                                                     //Map<String, Object> note = documentSnapshot.getData();
                                                     ListBook item = new ListBook();
                                                     item.setName(book_author_name);
@@ -210,8 +211,9 @@ public class Bookshelf extends AppCompatActivity {
 
                     // ボタンがクリックされました
                     public void onClick(View v) {
-
-                        db.collection("user").document("1801168@s.asojuku.ac.jp").collection("history").document(item.getIsbn())
+                        data = (DataBean)getApplication();
+                        String mail = data.getMail();
+                        db.collection("user").document(mail).collection("history").document(item.getIsbn())
                                 .delete()
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -229,7 +231,6 @@ public class Bookshelf extends AppCompatActivity {
                 });
                 vh.details_button = (Button)view.findViewById(R.id.details);
 
-                //////////////////////////////////////////////////////////////////
                 //　詳細ボタンが押されたときに画面遷移できるように
                 vh.details_button.setTag(this.getItem(position));
                 // 詳細ボタンがクリックされたときの通知先を設定する
@@ -242,17 +243,11 @@ public class Bookshelf extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
-                //////////////////////////////////////////////////////////////////
 
                 // ビューに登録する
                 view.setTag(vh);
             } else {
                 vh = (ViewHolder)view.getTag();
-                //////////////////////////////////////////////////////////////////
-                // 削除ボタンの削除用データの更新
-                // ここで更新しない場合はだんだん削除位置がずれていく
-             //   vh.delete_button.setTag(this.getItem(position));
-                //////////////////////////////////////////////////////////////////
             }
 
 
