@@ -114,11 +114,4 @@ public class MyPage extends AppCompatActivity {
                 });
 
     }
-
-
-
-
-
-
-
 }
